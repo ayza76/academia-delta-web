@@ -1,0 +1,25 @@
+/* Quitamos el límite de ancho para usar toda la pantalla de la PC */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Efecto de hover suave para tus tarjetas de la academia */
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+/* Animación sutil para el logo de AYZA */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.logo-animated {
+  animation: float 6s ease-in-out infinite;
+}
